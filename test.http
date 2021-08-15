@@ -2,8 +2,8 @@ POST http://localhost:5000/Events HTTP/1.1
 content-type: application/json
 
 {
-    "action": "click",
-    "subject": "Challenge",
+    "action": "open",
+    "subject": "SUBJECT",
     "recipient": "example@piloto.org"
 }
 ###
@@ -11,3 +11,9 @@ GET http://localhost:5000/EVENTS HTTP/1.1
 
 ###
 GET http://localhost:5000/EVENTS?timestamp=Sat Aug 14 2021 HTTP/1.1
+
+###
+GET http://localhost:5000/Summary?iDate=Sat Aug 14 2021/Sun Aug 15 2021 HTTP/1.1
+
+###
+GET http://localhost:5000/Summary?recipient=example@piloto.org HTTP/1.1

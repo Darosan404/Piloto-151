@@ -3,12 +3,12 @@ const router = express.Router();
 
 // Event
 emails = [
-    {
-    id: 0,
-    action: 'click or open', // => Should be limited to `click` and `open`
-    subject: 'SUBJECT',
-    recipient: 'example@piloto151.org', // => Email address
-    timestamp: new Date
+  {
+  id: 0,
+  action: 'click or open', // => Should be limited to `click` and `open`
+  subject: 'SUBJECT',
+  recipient: 'example@piloto151.org', // => Email address
+  timestamp: new Date
 },
 ]
 
@@ -79,4 +79,4 @@ router.get("/Events", async (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = {router, emails};

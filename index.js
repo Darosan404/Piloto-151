@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const { router } = require("./routes/events")
 
 // Initializations
 const app = express();
@@ -12,8 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json()); 
 
 // Routes
-app.use(require("./routes/events"));
-//app.use(require(./routes/summary));
+app.use(router);
+app.use(require("./routes/summary"));
 
 // Starting the server
 app.listen(app.get("port"), () => {
