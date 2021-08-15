@@ -1,0 +1,10 @@
+POST http://localhost:5000/Events HTTP/1.1
+content-type: application/json
+
+{
+    "action": "click",
+    "subject": "Challenge",
+    "recipient": "example@piloto.org"
+}
+###
+GET http://localhost:5000/EVENTS HTTP/1.1
