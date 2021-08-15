@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json()); 
 
 // Routes
-//app.use(require(./routes));
 app.use(require("./routes/events"));
 //app.use(require(./routes/summary));
 
