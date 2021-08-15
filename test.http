@@ -8,3 +8,6 @@ content-type: application/json
 }
 ###
 GET http://localhost:5000/EVENTS HTTP/1.1
+
+###
+GET http://localhost:5000/EVENTS?timestamp=Sat Aug 14 2021 HTTP/1.1
